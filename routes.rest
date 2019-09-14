@@ -1,0 +1,55 @@
+GET http://localhost:3000/products
+
+###
+
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "name":"Harry Potter",
+    "price":12.99
+}
+
+###
+GET http://localhost:3000/products/5d765c5de31d1259486ee90e
+
+###
+PATCH http://localhost:3000/products/3
+
+###
+GET http://localhost:3000/orders
+
+###
+
+DELETE http://localhost:3000/orders/5
+
+
+###
+
+POST http://localhost:3000/orders
+Content-Type: application/json
+
+{
+    "productId":"5d765c5de31d1259486ee90e",
+    "quantity":3
+}
+
+###
+
+POST http://localhost:3000/user/signup
+Content-Type: application/json
+
+{
+    "email":"test5@gmail.com",
+    "password":"hisham123"
+}
+
+###
+
+POST http://localhost:3000/user/login
+Content-Type: application/json
+
+{
+    "email":"test5@gmail.com",
+    "password":"hisham123"
+}
